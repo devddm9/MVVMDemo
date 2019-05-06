@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace MVVMDemo.View
 {
     /// <summary>
-    /// Interaction logic for StudentView.xaml
+    /// Interaction logic for StudentView.xaml 
     /// </summary>
     public partial class StudentView : UserControl
     {
