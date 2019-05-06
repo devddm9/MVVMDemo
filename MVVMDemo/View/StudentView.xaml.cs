@@ -13,25 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MVVMDemo
+namespace MVVMDemo.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for StudentView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StudentView : UserControl
     {
-        public MainWindow()
+        public StudentView()
         {
             InitializeComponent();
-        }
-
-        private void StudentViewControl_Loaded(object sender, RoutedEventArgs e)
-        {
-            MVVMDemo.ViewModel.StudentViewModel studentViewModelObject =
-               new MVVMDemo.ViewModel.StudentViewModel();
-            studentViewModelObject.LoadStudents();
-
-            UserControl1.DataContext = studentViewModelObject;
         }
     }
 }
